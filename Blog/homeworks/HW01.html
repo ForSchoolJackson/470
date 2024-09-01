@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>470 Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <style>
+        h2 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        .content {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: auto;
+        }
+
+        .content hr {
+            height: 4px;
+            background-color: #7a7a7a;
+            margin: 2rem, 0rem;
+        }
+
+        .content h3 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .content p {
+            font-size: 1.5rem;
+        }
+
+        .content img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            margin: 2rem;
+        }
+
+        .navbar {
+            margin-bottom: 1rem;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar has-shadow is-danger">
+        <a href="../index.html">
+            <h2 class="navbar-item has-text-white is-size-2">Jackson Heim</h2>
+        </a>
+
+    </nav>
+
+    <main>
+
+        <!-- heading -->
+        <div class="ml-4">
+            <a href="../index.html"><img src="../images/back.png" alt="Back Arrow" width="30" height="30"></a>
+            <h2 class="is-text-black has-text-centered mt-5">Get to Know the Tools</h2>
+            <h3 class="is-text-grey has-text-centered mt-1">September 1st</h3>
+        </div>
+
+        <!-- content -->
+        <div class="main-content">
+            <div class="content crop has-background-light custom-box m-6">
+
+                <p>The first real thing that I had to do using the arduino kit was create some basic circuits. We had
+                    already learned about the parts of a circuit as well as Ohm's law in class, so this was an exercise
+                    in putting what I learned into practice.
+                </p>
+
+                <hr>
+
+                <h3>Baby’s first circuit</h3>
+
+                <p>The first cricut I had to make was a pretty simple one. It has one button that must be pressed to
+                    turn the LED on. I gathered all my materials out of the bags to get started.
+                </p>
+
+                <img src="../images/HW1/bag.JPG" alt="Ardiuno HW">
+                <img src="../images/HW1/supp.JPG" alt="Ardiuno HW">
+
+                <p>Then I followed the video instructions to make the circuit. Starting by using the red wire for the 5v
+                    and the black wire for the ground. From there I placed the button and the LED making sure the button
+                    was the correct way. I then connected the button to the 5V power with a resistor to prevent the LED
+                    from receiving too much voltage. From there, I used more wires to complete the circuit. I made sure
+                    to connect the anode side of the LED to the incoming power, and the cathode side to the ground wire.
+                </p>
+
+                <img src="../images/HW1/rcuf.JPG" alt="Ardiuno HW">
+                <img src="../images/HW1/rcf.JPG" alt="Ardiuno HW">
+
+                <p>Then I plugged it in. And it worked! First circuit was a success.</p>
+
+                <img src="../images/HW1/cb.gif" alt="Ardiuno HW">
+
+                <p>I can see here from the drawing in the book how exactly the circuit works. The power comes from the
+                    5V wire, then runs through a resistor which is connected to a button that does not complete the
+                    circuit until pushed down on. It then flows to an LED light, then to the ground where the full
+                    circuit is completed.
+                </p>
+
+                <img src="../images/HW1/rcd.JPG" alt="Ardiuno HW">
+
+                <hr>
+
+
+                <h3>Series circuit</h3>
+
+                <p>The second circuit I needed to make was a series circuit. As shown in this model here, it is similar
+                    to the first one but has two buttons instead. The buttons are in a row meaning both buttons need to
+                    be pushed down in order for the LED to light up.
+                </p>
+
+                <img src="../images/HW1/scd.JPG" alt="Ardiuno HW">
+
+                <p>I slightly change the first circuit by adding another button, then using wires to complete the
+                    circuit. Making sure to connect the cathode side of the LED to the ground and so on.
+                </p>
+
+                <img src="../images/HW1/scuf.JPG" alt="Ardiuno HW">
+                <img src="../images/HW1/scf.JPG" alt="Ardiuno HW">
+
+                <p>Once again it worked exactly as intended by only lighting up when both buttons were pressed. If only
+                    one button was pressed the circuit would not be complete and would not light up the LED. But when
+                    both were pressed it lit up!
+                </p>
+
+                <img src="../images/HW1/sc1b.gif" alt="Ardiuno HW">
+                <img src="../images/HW1/sc2b.gif" alt="Ardiuno HW">
+
+                <hr>
+
+                <h3>Parallel circuit
+                </h3>
+
+                <p>The last circuit I had to make was the parallel circuit. Like the series circuit, it also has two
+                    buttons, but you don't have to push both buttons to get the LED to light up. As shown in the diagram
+                    here, the circuit will be complete if at least one button is pressed.
+                </p>
+
+                <img src="../images/HW1/pcd.JPG" alt="Ardiuno HW">
+
+
+                <p>I first connected the wires to make sure the first button created a loop. Then I connected the second
+                    button and made sure that also created a full look for the electricity to flow through.
+                </p>
+
+                <img src="../images/HW1/pcuf.JPG" alt="Ardiuno HW">
+                <img src="../images/HW1/pcf.JPG" alt="Ardiuno HW">
+
+                <p>Circuit complete! Pressing either button down, or both buttons at the same time causes the LED to
+                    light up exactly as it should.
+                </p>
+
+                <img src="../images/HW1/pcb.gif" alt="Ardiuno HW">
+
+                <hr>
+
+
+                <h3>Conclusion
+                </h3>
+
+                <p>This homework was very interesting because although I learned how circuits and their parts work in
+                    class, it was a very different experience actually getting to make one myself. I feel like it helped
+                    me understand how it worked a lot better than if I was just looking at pictures in textbooks.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>
