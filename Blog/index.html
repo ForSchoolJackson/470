@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>470 Blog</title>
-    <link rel="stylesheet" href="./style/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
     <style>
@@ -14,18 +13,71 @@
             margin: auto;
             border-radius: 10px;
             padding: 2rem;
+            display: flex;
+            align-items: flex-start;
         }
 
-        .custom-box h2,
-        p {
-            color: grey;
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+
+
+        .text-content {
+            flex: 4;
+            padding-left: 1rem;
         }
 
         h2 {
             font-size: 4rem;
-
-            font-size: 4rem;
             font-weight: bold;
+        }
+
+        .custom-box p {
+            font-size: 1.7vw;
+            color: grey;
+        }
+
+        .custom-box h2 {
+            color: grey;
+            font-size: 2.7vw;
+            font-weight: bold;
+        }
+
+        .custom-box h3 {
+            color: grey;
+            font-size: 1.5vw;
+
+        }
+
+        @media (max-width: 700px) {
+            .image-container {
+                display: none;
+            }
+
+            .custom-box p {
+                font-size: 1.2rem
+            }
+
+            .custom-box h2 {
+                font-size: 2rem
+            }
+
+            .custom-box h3 {
+                font-size: 1rem
+            }
+
         }
     </style>
 </head>
@@ -47,36 +99,35 @@
             <div class="row">
                 <a class="mt-6" href="homeworks/HW00.html">
                     <div class="has-background-light custom-box m-6">
-                        <div class="columns">
-                            <div class="column is-one-third m-auto">
-                                <img src="" alt="Homework Image">
-                            </div>
-                            <div class="column is-two-thirds">
-                                <h2 class="is-size-3"> <b>Homework 0</b> </h2>
-                                <p class="is-text-black">Description</p>
-                            </div>
+                        <div class="image-container">
+                            <img src="images/hw0/working.JPG" alt="Homework Image">
+                        </div>
+                        <div class="text-content">
+                            <h2 class=""> <b>Homework 0: Setup</b> </h2>
+                            <h3 class="">August 31st</h3>
+                            <br>
+                            <p class="is-text-black">Unpacked my Arduino kit to get it set up. Put all the parts
+                                together and connected it to my computer.</p>
                         </div>
                     </div>
                 </a>
             </div>
+
 
             <div class="row">
-                <a class="mt-6" href="homeworks/HW00.html">
+                <a class="mt-6" href="homeworks/HW01.html">
                     <div class="has-background-light custom-box m-6">
-                        <div class="columns">
-                            <div class="column is-one-third m-auto">
-                                <img src="" alt="Homework Image">
-                            </div>
-                            <div class="column is-two-thirds">
-                                <h2 class="is-size-3"> <b>Homework 0</b> </h2>
-                                <p class="is-text-black">Description</p>
-                            </div>
+                        <div class="image-container">
+                            <img src="images/hw1/" alt="Homework Image">
+                        </div>
+                        <div class="text-content">
+                            <h2 class=""> <b>Homework 1: Setup</b> </h2>
+                            <h3 class="">September 1st </h3>
+                            <p class="is-text-black">...</p>
                         </div>
                     </div>
                 </a>
             </div>
-
-
         </div>
 
         </div>

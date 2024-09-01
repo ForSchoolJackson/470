@@ -6,13 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>470 Blog</title>
-  <link rel="stylesheet" href="./style/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
   <style>
     h2 {
       font-size: 4rem;
       font-weight: bold;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    .content {
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: auto;
+    }
+
+    .content hr {
+      height: 4px;
+      background-color: #7a7a7a;
+      margin: 2rem, 0rem;
+    }
+
+    .content h3 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .content p {
+      font-size: 1.5rem;
+    }
+
+    .content img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      margin: 2rem;
+    }
+
+    .navbar {
+      margin-bottom: 1rem;
+    }
+
+    .main-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-items: flex-start;
+      min-height: 100vh;
     }
   </style>
 </head>
@@ -25,15 +69,104 @@
     </a>
 
   </nav>
+
   <main>
-    <br>
+
     <!-- heading -->
     <div class="ml-4">
       <a href="../index.html"><img src="../images/back.png" alt="Back Arrow" width="30" height="30"></a>
-      <h2 class="is-text-black has-text-centered mt-5"><b>Homework 0</b></h2>
+      <h2 class="is-text-black has-text-centered mt-5">Setup</h2>
+      <h3 class="is-text-grey has-text-centered mt-1">August 31st</h3>
     </div>
 
-      <!-- content -->
+    <!-- content -->
+    <div class="main-content">
+      <div class="content crop has-background-light custom-box m-6">
+
+        <p>This is the first blog post for my 470 class. I didn't get the Arduino starter kit until yesterday, so I'm
+          starting this a little late. I also just finished creating the website to put this on. So I hope in the
+          future,
+          that these won't take as long, and I'll be able to get them done earlier in the week. Anyway, let's get
+          started.
+        </p>
+
+        <hr>
+
+        <h3>Open for the first time</h3>
+
+        <p>So, first I opened up the kit to make sure I had all the parts, because it came in the mail already opened.
+          Luckily I did! Then I flipped to the page with the instructions to start the setup.
+        </p>
+
+        <img src="../images/hw0/arduinoKit.JPG" alt="Ardiuno HW">
+        <img src="../images/hw0/arduinoBook.JPG" alt="Ardiuno HW">
+
+        <hr>
+
+
+        <h3>Starting the setup</h3>
+
+        <p>I popped out all the parts like the book said. It took a while to pop them out using my hands, but we got
+          there
+          in the end. Then I screwed the Arduino Uno onto the base as instructed. I had to use my hands, unlike what it
+          shows in the
+          example, because I had no screw driver. I decided not to attach the breadboard just yet because I couldn't
+          figure out which way it went.
+        </p>
+
+        <img src="../images/hw0/parts.JPG" alt="Ardiuno HW">
+        <img src="../images/hw0/screwed.JPG" alt="Ardiuno HW">
+
+        <p>Once I downloaded the Arduino IDE, I plugged it in. It immediately lit up and was already blinking which I
+          supposed was a good thing. It seemed to be all set up!
+        </p>
+
+        <img src="../images/hw0/pluggedIn.JPG" alt="Ardiuno HW">
+        <img src="../images/hw0/working.JPG" alt="Ardiuno HW">
+
+        <hr>
+
+        <h3>The blinking light
+        </h3>
+
+        <p>I followed the directions and opened up the beginner blink example. I pressed the button and it did this
+          little
+          blinking pattern, which showed that it was working.
+        </p>
+
+        <img src="../images/hw0/beginnerTest.JPG" alt="Ardiuno HW">
+        <img src="../images/hw0/blinking.gif" alt="Ardiuno HW">
+
+
+        <p>I attached the breadboard making sure it was facing the right way, although it is a little crooked. Then as
+          I
+          read along, it told me to change the delay time to make it blink faster, just to prove that it was
+          completely
+          connected. I did that, and this is the final result. Blinking fast, like it should.</p>
+
+        <img src="../images/hw0/changedDelay.JPG" alt="Ardiuno HW">
+        <img src="../images/hw0/blinkingFast.gif" alt="Ardiuno HW">
+
+        <hr>
+
+
+        <h3>Conclusion
+        </h3>
+
+        <p>I did feel I had to go a little quickly through this one because it took me a while to get the kit and set
+          up
+          the website. I'm hoping that from here on out it wont take me as long, due to the stuff already being set
+          up, so
+          I can actually focus more on the assignment. It was a lot of fun though, and it makes me excited for what is
+          to
+          come in the future.
+        </p>
+
+      </div>
+
+    </div>
+
+
 
   </main>
 </body>
